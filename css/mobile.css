@@ -26,11 +26,14 @@ body{
     padding: 0;
     font-size: 62.5%;
     font-family: 'Josefin Sans', sans-serif;
-    background: linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container{
-    width: 100vw;
+    width: 375px;
     height: 600px;
     display: grid;
     grid-template-rows: repeat(10, 60px);
@@ -91,11 +94,41 @@ body{
     line-height: 20px;
     color: var(--desaturatedRed);
 }
+
 /*  */
 .email-container{
     grid-row: 10 / 11;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0 25px;
 }
+.email-container form{
+    height: 50px;
+}
+.email-container #email{
+    width: 319px;
+    height: 40px;
+    border: 1px solid var(--desaturatedRed);
+    border-radius: 20px;
+}
+.email-container input::placeholder{
+    color: var(--desaturatedRed);
+    padding: 0 20px;
+    font-size: 0.8rem;
+}
+.email-container #submit{
+    width: 60px;
+    height: 45px;
+    position: relative;
+    bottom: 44px;
+    left: 265px;
+    cursor: pointer;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: 0;
+    border-radius: 20px;
+    z-index: 2;
+}
+
