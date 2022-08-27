@@ -131,4 +131,7 @@ body{
     border-radius: 20px;
     z-index: 2;
 }
+.email-container #submit:hover{
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%) )
+}
 
